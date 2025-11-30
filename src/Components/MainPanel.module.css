@@ -1,0 +1,60 @@
+.monomaniacOneRegular {
+  font-family: "Monomaniac One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 526px;
+  height: 264px;
+  background-color: #393737;
+  border-radius: 8px;
+  display: flex;
+}
+
+.displayColumn {
+  width: 283px;
+  height: 100%;
+  color: whitesmoke;
+}
+
+.imageDisplay {
+  width: 265px;
+  height: 131px;
+}
+
+.textDisplay {
+  width: 100%;
+  height: 81px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textColumn {
+  width: 203px;
+  height: 100%;
+  font-size: 24px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.textBox {
+  width: 162px;
+  height: 40px;
+  border-top: 1px solid #48ff1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#noBorder {
+  border: 0px;
+}
+
+.text {
+  color: whitesmoke;
+}

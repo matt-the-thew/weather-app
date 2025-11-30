@@ -1,15 +1,13 @@
 import { useState } from "react";
 import "./App.css";
+import MainPanel from "./Components/MainPanel";
+import TitlePanel from "./Components/TitlePanel";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div className="container">
-        <h1>Location</h1>
-        <h2>degrees, condition</h2>
-      </div>
+      <TitlePanel />
+      <MainPanel />
     </>
   );
 }
