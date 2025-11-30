@@ -1,16 +1,20 @@
-import React from "react";
-import "./TitlePanel.css";
-import activeClock from "../../utils/dateTime";
-
-let currentTimeString = activeClock();
+import React, { useState, useEffect } from "react";
+import styles from "./TitlePanel.module.css";
+import Clock from "./Clock";
 
 const TitlePanel = () => {
   return (
     <>
-      <div className="container">
-        <h1 className="monomaniac-one-regular">Atmos</h1>
-        <h2>v0.0.1</h2>
-        <h1>${currentTimeString}</h1>
+      <div className={styles.container}>
+        <h1 className={`${styles.sairaStencilOneRegular} ${styles.title}`}>
+          Atmos
+          <span
+            className={`${styles.sairaStencilOneRegular} ${styles.version}`}>
+            v0.0.1
+          </span>
+        </h1>
+
+        <Clock />
       </div>
     </>
   );
